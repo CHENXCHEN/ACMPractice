@@ -1,0 +1,7 @@
+.idea
+.DS_Store
+
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+build
