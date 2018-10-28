@@ -1,4 +1,4 @@
-package hackerrank.Practice.InterviewPreparationKit.WarmupChallenges.SockMerchant
+package hackerrank.Practice.InterviewPreparationKit.WarmupChallenges.CountingValleys
 import java.io._
 import java.math._
 import java.security._
@@ -8,17 +8,20 @@ import java.util.concurrent._
 import java.util.function._
 import java.util.regex._
 import java.util.stream._
-import scala.collection.mutable
 
 object Solution {
 
-  // Complete the sockMerchant function below.
-  def sockMerchant(n: Int, ar: Array[Int]): Int = {
-    val map = mutable.Map[Int, Int]()
-    ar.foreach(
-      x => map += x -> (map.getOrElse(x, 0) + 1)
+  // Complete the countingValleys function below.
+  def countingValleys(n: Int, s: String): Int = {
+    var cnt = 0
+    var level = 0
+    s.foreach(
+      x => {
+        if (x == 'D' && level == 0) cnt += 1
+        level += (if (x == 'D') -1 else 1)
+      }
     )
-    map.values.map(_ / 2).sum
+    cnt
   }
 
   def main(args: Array[String]) {
@@ -32,16 +35,16 @@ object Solution {
 
     val n = stdin.readLine.trim.toInt
 
-    val ar = stdin.readLine.split(" ").map(_.trim.toInt)
-    val result = sockMerchant(n, ar)
+    val s = stdin.readLine
+
+    val result = countingValleys(n, s)
 
     printWriter.println(result)
 
     printWriter.close()
   }
 
-
   def testData(): Unit = {
-    println(sockMerchant(9, Array(10,20,20,10,10,30,50,10,20)))
+    println(countingValleys(8, "UDDDUDUU".toString))
   }
 }
