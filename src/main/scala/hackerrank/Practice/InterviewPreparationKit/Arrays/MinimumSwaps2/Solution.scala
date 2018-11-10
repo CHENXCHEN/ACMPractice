@@ -16,6 +16,11 @@ import scala.util.control.Breaks
 object Solution {
 
   // Complete the minimumSwaps function below.
+  /**
+    * 给定一个无序数组arr，数组中的任意两个位置可以进行交换，求最少需要多少次交换可以获得升序数组
+    * @param arr
+    * @return
+    */
   def minimumSwaps(arr: Array[Int]): Int = {
     val qArr = arr.map(_ - 1)
     var cnt = 0
