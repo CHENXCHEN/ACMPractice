@@ -15,8 +15,8 @@ object Solution {
 
   /**
     * 判断magazine数组中的字符串是否能组成note数组
-    * @param magazine
-    * @param note
+    * @param magazine 杂志数组
+    * @param note   笔记数组
     */
   // Complete the checkMagazine function below.
   def checkMagazine(magazine: Array[String], note: Array[String]): Unit = {
