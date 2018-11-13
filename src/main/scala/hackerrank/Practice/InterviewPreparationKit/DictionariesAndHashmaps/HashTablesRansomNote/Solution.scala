@@ -13,6 +13,11 @@ import scala.collection.mutable
 
 object Solution {
 
+  /**
+    * 判断magazine数组中的字符串是否能组成note数组
+    * @param magazine
+    * @param note
+    */
   // Complete the checkMagazine function below.
   def checkMagazine(magazine: Array[String], note: Array[String]): Unit = {
     val mMap = magazine.zipWithIndex.groupBy(_._1).map {
