@@ -12,6 +12,10 @@ import java.util.stream._
 
 object Solution {
   // Complete the countSwaps function below.
+  /**
+    * 给定一个数组，统计使用冒泡排序需要多少次交换
+    * @param a 给定的数组
+    */
   def countSwaps(a: Array[Int]): Unit = {
     var cnt = 0
     for(i <- a.indices) {
