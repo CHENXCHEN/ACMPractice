@@ -12,6 +12,10 @@ class ListNode(var _x: Int = 0) {
   var x: Int = _x
 }
 
+/**
+  * 将两个逆序链表相加
+  * 解法：递归相加，遇10进位
+  */
 object Solution {
   def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
     addTwo(l1, l2, 0)

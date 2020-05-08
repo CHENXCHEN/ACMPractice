@@ -2,6 +2,8 @@ package leetcode.normal.n3
 
 /**
   * 获得最长不重复子串的长度
+  * 解法1: 遍历每个元素时找到该元素在字符串中最后出现的位置，然后重新计算长度，记录最后位置，每次从最后位置开始找元素最后出现的位置
+  * 解法2：每个元素最后出现的位置可以通过 hash 记录
   */
 object Solution {
   def lengthOfLongestSubstring(s: String): Int = {

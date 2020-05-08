@@ -1,5 +1,11 @@
 package leetcode.normal.n4
 
+/**
+  * 给定两个有序数组，求其中位数是多少
+  * 解法：取两个数组中的最小值和最大值，二分值，每个值可以在两个有序数组中找到其位置，
+  *       通过位置可以判断中位数是在左边还是右边，一些细节：
+  *       需要讨论可能存在相同数字的情况，需要讨论数组长度为奇数和偶数的情况，需要讨论边界情况，某数组元素已经被完全排除
+  */
 object Solution {
   def findMedianSortedArrays(nums1: Array[Int], nums2: Array[Int]): Double = {
     var leftValue =

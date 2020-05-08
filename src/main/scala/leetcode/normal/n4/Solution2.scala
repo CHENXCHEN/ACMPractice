@@ -1,5 +1,11 @@
 package leetcode.normal.n4
 
+/**
+  * 给定两个有序数组，求其中位数是多少
+  * 解法：将问题转换为求第K大的数，可以将数组长度为奇数和偶数的情况统一起来，计算第 (len + 1) / 2 , (len + 2) / 2 大的值
+  *       通过二分排除中位数左边的数，假设要求第 k 大的数，可以将问题转换为求第 k / 2 大的值，因为如果 a[k / 2] < b[k / 2]，
+  *       那么可以直接排除掉 a 数组中的 k / 2 个元素，由此递归下去，可以在 log(n + m) 的复杂度解决问题
+  */
 object Solution2 {
   def findMedianSortedArrays(nums1: Array[Int], nums2: Array[Int]): Double = {
     val len = nums1.length + nums2.length

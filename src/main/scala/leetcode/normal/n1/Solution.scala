@@ -2,6 +2,7 @@ package leetcode.normal.n1
 /**
   * 求两数之和
   * 输出数组中两个元素相加等于 target 的下标，下标不能相等
+  * 解法：hash 记录每个元素出现的位置，然后计算 target - vv 的下标
   */
 object Solution {
   def twoSum(nums: Array[Int], target: Int): Array[Int] = {
