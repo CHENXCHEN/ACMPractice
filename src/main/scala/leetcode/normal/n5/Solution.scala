@@ -6,8 +6,6 @@ package leetcode.normal.n5
   *       假定 s(i - k) = s(i + k)，且 s(i - k - 1) != s(i + k + 1)
   *       这里需要额外讨论 当 i 为奇数或者偶数时候，真实的回文串长度是多少
   *       当 i - k 为奇数或者偶数的时候，真实的回文串起始长度是多少
-  * 其它问题：将字符串逆序后，原字符串和逆序字符串的最大公共子串是回文串吗？
-  *             -- 不是，如果将字符串逆序求最大公共子串，那么得到的结果是最大逆序子串
   */
 object Solution {
   def longestPalindrome(s: String): String = {
