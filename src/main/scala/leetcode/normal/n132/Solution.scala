@@ -30,17 +30,18 @@ object Solution {
     }
 
     val visit = Array.fill[Int](s.length + 10)(Int.MaxValue)
+    visit(0) = 0
 
-    val q = mutable.Queue[(Int, Int)]((0, 0))
+    val q = mutable.Queue[Int](0)
     while (q.nonEmpty) {
-      val (curIndex: Int, curStep: Int) = q.dequeue()
-      val nextStep = curStep + 1
+      val curIndex: Int = q.dequeue()
+      val nextStep = visit(curIndex) + 1
       if (curIndex < s.length)
         edges(curIndex).foreach {
           nextIndex =>
             if (visit(nextIndex) > nextStep) {
               visit(nextIndex) = nextStep
-              q.enqueue((nextIndex, nextStep))
+              q.enqueue(nextIndex)
             }
         }
     }
