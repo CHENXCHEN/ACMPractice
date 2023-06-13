@@ -1,4 +1,4 @@
-package leetcode.normal.j2475;
+package leetcode.normal.j2925;
 
 class Node {
     public int val;
