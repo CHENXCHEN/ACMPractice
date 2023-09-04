@@ -3,7 +3,10 @@ package leetcode.normal.j449;
 import java.util.ArrayList;
 
 /**
- * Definition for a binary tree node.
+ * Created by CHENXCHEN
+ * <a href="https://leetcode.cn/problems/serialize-and-deserialize-bst/">449. 序列化和反序列化二叉搜索树</a>
+ *
+ * @author <a href="mailto:chenhuachaoxyz@gmail.com">报时</a>
  */
 public class Codec {
 
