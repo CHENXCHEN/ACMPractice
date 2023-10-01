@@ -1,4 +1,4 @@
-package leetcode.normal.j2136;
+package leetcode.normal.mst1710;
 
 /**
  * Created by CHENXCHEN
