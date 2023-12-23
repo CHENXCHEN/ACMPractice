@@ -1,4 +1,4 @@
-package leetcode.normal.j1962;
+package leetcode.normal.jlcr133;
 
 /**
  * Created by CHENXCHEN
