@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 /**
  * Created by CHENXCHEN
  * <a href="https://leetcode.cn/problems/find-the-k-sum-of-an-array/description/">2386. 找出数组的第 K 大和</a>
+ * 相关题单：https://leetcode.cn/problems/find-the-k-sum-of-an-array/solutions/1764389/zhuan-huan-dui-by-endlesscheng-8yiq/
  *
  * @author <a href="mailto:chenhuachaoxyz@gmail.com">报时</a>
  */
