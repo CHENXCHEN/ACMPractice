@@ -1,4 +1,4 @@
-package leetcode.normal.j2028;
+package leetcode.normal.jlcr172;
 
 /**
  * Created by CHENXCHEN
