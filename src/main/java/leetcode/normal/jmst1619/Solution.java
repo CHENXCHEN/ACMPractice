@@ -1,4 +1,4 @@
-package leetcode.normal.j3101;
+package leetcode.normal.jmst1619;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
