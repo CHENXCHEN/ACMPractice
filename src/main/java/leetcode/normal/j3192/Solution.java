@@ -10,14 +10,17 @@ class Solution {
     public int minOperations(int[] nums) {
         int revCnt = 0;
         for (int num : nums) {
-            if (num == 0) {
-                if ((revCnt & 1) == 0) {
-                    ++revCnt;
-                }
-            } else {
-                if ((revCnt & 1) == 1) {
-                    ++revCnt;
-                }
+//            if (num == 0) {
+//                if ((revCnt & 1) == 0) {
+//                    ++revCnt;
+//                }
+//            } else {
+//                if ((revCnt & 1) == 1) {
+//                    ++revCnt;
+//                }
+//            }
+            if ((revCnt & 1) == num) {
+                revCnt++;
             }
         }
         return revCnt;
