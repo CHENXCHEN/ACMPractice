@@ -2,8 +2,7 @@ package leetcode.normal.j812;
 
 /**
  * Created by CHENXCHEN
- * https://leetcode.cn/problems/largest-triangle-area/
- * 812. 最大三角形面积
+ * <a href="https://leetcode.cn/problems/largest-triangle-area/">812. 最大三角形面积</a>
  *
  * @author <a href="mailto:chenhuachaoxyz@gmail.com">报时</a>
  */
@@ -30,6 +29,7 @@ class Solution {
     }
 
     double calcArea(double a, double b, double c) {
+        // 海伦公式
         double p = (a + b + c) / 2.0;
         double needSqrt = p * (p - a) * (p - b) * (p - c);
         if (needSqrt < 1e-6) return 0;
