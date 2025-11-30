@@ -18,7 +18,7 @@ class Solution2 {
         if (x == 0) return 0;
         // 枚举前缀和ss，并找到使得 (sum(nums) % p - ss % p) == 0 的最后的那个下标，哈希记录即可
         Map<Integer, Integer> mm = new HashMap<>();
-        int ss = 0, n = nums.length, ans = Integer.MAX_VALUE;
+        int ss = 0, n = nums.length, ans = n;
         for (int i = 0; i < n; i++) {
             mm.put(ss, i);
             ss = (ss + nums[i]) % p;
@@ -27,6 +27,6 @@ class Solution2 {
                 ans = Math.min(ans, i - pre + 1);
             }
         }
-        return ans == Integer.MAX_VALUE ? -1 : ans;
+        return ans == n ? -1 : ans;
     }
 }
